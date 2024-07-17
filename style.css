@@ -14,7 +14,8 @@ h2{
 .container{
     width: 90%;
     height: 400px;
-    background: rgb(185, 193, 197);
+    /* background: rgb(185, 193, 197); */
+    background: black;
     margin: 50px auto;
     padding: 30px;
     display: flex;
@@ -145,5 +146,5 @@ label{
 }
 #answer-paragraph{
     font-weight: bold;
-    color: rgb(0, 38, 128);
+    color: rgb(106, 128, 179);
 }

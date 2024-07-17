@@ -28,11 +28,23 @@ function solve(){
         let roundedX1= finalX1.toFixed(2);
         let roundedX2= finalX2.toFixed(2);
 
-        answerParagraph.innerHTML= `
+        if(isNaN(roundedX1)){
+            answerParagraph.innerHTML= `
+            <p>
+                Solution is an imaginary number or cross check inputs
+            </p>
+        `
+        }
+
+        else{
+            answerParagraph.innerHTML= `
             <p>
                 Solution: X1 = ${roundedX1} and X2 = ${roundedX2}
             </p>
         `
+        }
+
+
 // Console logs below to test every stage and ensure correctness
         // console.log(mult4AC);
         // console.log(mult2A);
